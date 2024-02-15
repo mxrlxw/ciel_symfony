@@ -7,3 +7,7 @@ controllers:
 category:
     path: /category
     controller: App\Controller\CategoryController::index
+
+product:
+    path: /product
+    controller: App\Controller\ProductController::index

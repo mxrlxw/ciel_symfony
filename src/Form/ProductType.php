@@ -20,7 +20,7 @@ class ProductType extends AbstractType
             ->add('image_url')
             ->add('category', EntityType::class, [
                 'class' => Category::class,
-'choice_label' => 'id',
+                'choice_label' => 'label',
             ])
         ;
     }
