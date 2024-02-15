@@ -18,11 +18,19 @@ class OrderType extends AbstractType
             ->add('quantity')
             ->add('user_id', EntityType::class, [
                 'class' => User::class,
-'choice_label' => 'id',
+                'choice_label' => 'id',
             ])
             ->add('product_id', EntityType::class, [
                 'class' => Product::class,
-'choice_label' => 'id',
+                'choice_label' => 'id',
+            ])
+            ->add('state', ChoiceType::class, [
+                'choices' => [
+                    'Non livré' => '1',
+                    'En cours de livraison' => '2',
+                    'Livré' => '3',
+                ],
+                'label' => 'Choisissez un état',
             ])
         ;
     }

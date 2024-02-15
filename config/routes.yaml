@@ -4,6 +4,10 @@ controllers:
         namespace: App\Controller
     type: attribute
 
+app_homepage:
+    path: /
+    controller: App\Controller\HomePageController::index
+
 category:
     path: /category
     controller: App\Controller\CategoryController::index
@@ -12,6 +16,6 @@ product:
     path: /product
     controller: App\Controller\ProductController::index
 
-app_homepage:
-    path: /
-    controller: App\Controller\HomePageController::index
+order:
+    path: /order
+    controller: App\Controller\OrderController::index
