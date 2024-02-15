@@ -11,3 +11,7 @@ category:
 product:
     path: /product
     controller: App\Controller\ProductController::index
+
+app_homepage:
+    path: /
+    controller: App\Controller\HomePageController::index
